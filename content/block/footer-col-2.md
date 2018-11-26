@@ -1,3 +1,3 @@
-#### Footer col 2
+#### Footerkolumn 2
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här har vi footerkolumn 2, icke att förväxla med footerkolumn 1. Den ligger lite mittemellan de andra.

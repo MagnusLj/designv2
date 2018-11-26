@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Colorful stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * A small clearfix:
@@ -4605,7 +4605,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #333;
+  background-color: #ffd71d;
+}
+a {
+  color: #006c2c;
 }
 article {
   padding: 5px;
@@ -4613,9 +4616,41 @@ article {
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #89D2FF;
-  font: 18px/1.33333333 Cambria, Georgia, Times, 'Times New Roman', serif;
+  color: #006c2c;
+  background-color: #ffd71d;
+  font: 22px/1.09090909 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  background-color: #FF938B;
+  padding-bottom: 0.01px;
+}
+.outer-wrap-footer,
+.inner.wrap-footer {
+  background-color: #9593FF;
+  color: #006c2c;
+}
+.region-footer {
+  background-color: #9593FF;
+}
+.inner-wrap-footer {
+  background-color: #9593FF;
+}
+.site-footer a {
+  color: #006c2c;
+}
+.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  background-color: #9593FF;
+}
+.site-logo-text a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #006c2c;
 }
 h1 {
   margin-bottom: 50px;
@@ -4629,7 +4664,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4643,7 +4678,7 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.12280702;
+  line-height: 1.37799043;
   font-weight: normal;
   border-bottom: 1px solid #666;
   margin-bottom: 23px;
@@ -4661,7 +4696,7 @@ h1 + h2 {
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.42222222;
+  line-height: 1.16363636;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
@@ -4671,7 +4706,7 @@ h2 + h3 {
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.52380952;
+  line-height: 1.24675325;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -4681,7 +4716,7 @@ h3 + h4 {
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.77777778;
+  line-height: 1.45454545;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -4691,7 +4726,7 @@ h4 + h5 {
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.06666667;
+  line-height: 1.74545455;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -4700,7 +4735,7 @@ h5 + h6 {
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.06666667;
+  line-height: 1.74545455;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -4850,7 +4885,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.52380952;
+  line-height: 1.24675325;
   text-align: left;
   font-style: italic;
 }
@@ -4960,17 +4995,11 @@ hr::after {
   display: block;
   clear: both;
 }
-a {
-  color: black;
-}
-.site-footer a {
-  color: white;
-}
 a:hover {
   color: red;
 }
 .byline {
-  border: 1px black;
+  border: 1px solid black;
   border-radius: 5px;
   font-size: 12px;
   background-color: white;
@@ -4997,17 +5026,6 @@ a:hover {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
-}
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1100px;
-  background-color: #89d2ff;
-}
-.inner-wrap-header {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -5045,17 +5063,8 @@ a:hover {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-.site-logo-text a {
-  font-size: 25px;
-  text-decoration: none;
-}
 ul {
   list-style-type: none;
-}
-.outer-wrap-footer,
-.inner.wrap-footer {
-  background-color: #89D2FF;
-  color: #fff;
 }
 .outer-wrap-header {
   background-color: #89d2ff;
@@ -5188,9 +5197,6 @@ ul {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
-}
-.region-footer {
-  background-color: #333;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer

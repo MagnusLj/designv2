@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Footerkolumn 1
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här är en liten egen text till footerkolumn 1. Den här ligger längst till vänster.

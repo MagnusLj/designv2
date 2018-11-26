@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Base stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * A small clearfix:
@@ -4607,6 +4607,9 @@ html {
   overflow-y: scroll;
   background-color: #333;
 }
+a {
+  color: #333;
+}
 article {
   padding: 5px;
 }
@@ -4616,6 +4619,38 @@ body {
   color: #333;
   background-color: #89D2FF;
   font: 18px/1.33333333 Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  background-color: white;
+  padding-bottom: 0.01px;
+}
+.outer-wrap-footer,
+.inner.wrap-footer {
+  background-color: white;
+  color: white;
+}
+.region-footer {
+  background-color: white;
+}
+.inner-wrap-footer {
+  background-color: white;
+}
+.site-footer a {
+  color: white;
+}
+.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  background-color: white;
+}
+.site-logo-text a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #333;
 }
 h1 {
   margin-bottom: 50px;

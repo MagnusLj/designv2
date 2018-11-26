@@ -15,3 +15,7 @@ v2.0.0 (2018-11-11)
 v3.0.0 (2018-11-21)
 ......................
 * Desinax vertical/horizontal grids, three column layout, finished report text for kmom03
+
+v4.0.0 (2018-11-26)
+......................
+* Made report on webpage styles, made minimalistic, colorful and dark themes
