@@ -19,3 +19,7 @@ v3.0.0 (2018-11-21)
 v4.0.0 (2018-11-26)
 ......................
 * Made report on webpage styles, made minimalistic, colorful and dark themes
+
+v4.0.1 (2018-11-27)
+......................
+* Added links for changing themes in report
