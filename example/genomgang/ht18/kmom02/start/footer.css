@@ -1,0 +1,22 @@
+.outer-wrap-footer {
+    background-color: #006e6d;
+    color: white;
+    padding: 2em 1em;
+    box-sizing: border-box;
+}
+
+.inner-wrap-footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-column {
+    display: inline;
+    float: left;
+    width: 26%;
+    margin: 0 3%;
+}
+
+.footer-column h3 {
+    font-size: 1.8em;
+}
