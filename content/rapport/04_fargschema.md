@@ -31,7 +31,7 @@ Resultat
 </tr>
 </table>
 
-Lunds universitet verkar ha valt ett mestadels analogt färgschema men den blågrå färgen tycks vara en komplemnentfärg till den bruna färgen. Den bruna färgen får väl kallas för accentfärg, den sticker ut
+Lunds universitet verkar ha valt ett mestadels analogt färgschema men den blågrå färgen tycks vara en komplementfärg till den bruna färgen. Den bruna färgen får väl kallas för accentfärg, den sticker ut
 genom att inte vara pastellaktig som de andra. Alla rubriker jag har tittat på använder Georgia (serif) och all brödtext jag har tittat på använder Arial (sans-serif). Jag tror att webbplatsens färgval och typografi motsvarar den profil de vill att webbplatsen ska ha, det är ju en hemsida som ska kunna gillas av både studenter och yrkesfolk. Man vill nog varken ha en för tråkig och färglös sida eller en för skrikig sida och det ser ut som en bra balans med de behagliga pastellfärgerna.
 
 #### Försäkringskassan
@@ -81,4 +81,4 @@ Referenser
 Övrigt
 -----------------------
 
-Skrivet av Magnus Ljungvall (enmansgrupp)
+Skrivet av Magnus (enmansgrupp)
