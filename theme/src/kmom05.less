@@ -1,7 +1,7 @@
 /*!
- * Minimalistic stylesheet for design kmom04.
+ * Minimalistic stylesheet for design kmom05.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom05.
  */
 
 
@@ -67,6 +67,12 @@
  */
 // @import "base/base.less";
 @import "base/base_kmom04.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    @maxContentWidth: 960px;
+    #desinax-figure.figure(@maxContentWidth);
+}
 
 /**
  * Import the vertical grid.
