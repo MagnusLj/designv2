@@ -1,7 +1,7 @@
 /*!
- * Minimalistic stylesheet for design kmom05.
+ * Design elements stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom05.
+ * This stylesheet is for the design course and kmom06.
  */
 
 
@@ -54,23 +54,6 @@
 @import "@desinax/figure/less/codepen.less";
 @import "@desinax/figure/less/figure.less";
 
-figure.asciinema {
-    &:extend(figure.figure);
-    #desinax-figure.asciinema();
-}
-
-figure.codepen,
-figure.figure-codepen {
-    &:extend(figure.figure);
-    #desinax-figure.codepen();
-}
-
-// Enable style from the module and optinally add customized layout
-figure.figure {
-    @maxContentWidth: 960px;
-    #desinax-figure.figure(@maxContentWidth);
-}
-
 
 // Show the grid
 .hgrid .inner-wrap {
@@ -85,7 +68,7 @@ figure.figure {
 // @import "base/base.less";
 @import "base/base_kmom04.less";
 
-// // Enable style from the module and optinally add customized layout
+// Enable style from the module and optinally add customized layout
 // figure.figure {
 //     @maxContentWidth: 960px;
 //     #desinax-figure.figure(@maxContentWidth);
@@ -95,10 +78,7 @@ figure.figure {
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/vgrid_kmom05.less";
-
-
-
+@import "layout/vgrid_kmom06.less";
 
 // Default grid, change to fit your requirements.
 // @columnWidth:   30;
@@ -119,7 +99,129 @@ figure.figure {
 @import "layout/regions.less";     // To add style for ?regions
 
 
+.box() {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
 
+#boxA {
+    .box();
+}
+#boxB {
+    .box();
+    padding: 25px;
+}
+#boxC {
+    .box();
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#text::first-letter {
+  font-size: 56px;
+  color: orange;
+  float: left;
+  padding-top: 6px;
+}
+
+#gradient {
+    width: 600px;
+    height: 150px;
+    background: linear-gradient(red, yellow);
+
+    transition: all 1s;
+    &:hover {
+        width: 700px;
+        font-size: 30px;
+        color: green;
+    }
+position: relative;
+//      &:after {
+//     font-family: FontAwesome;
+//     content: @fa-var-user;
+//     position: absolute;
+//     top: 140px;
+//     left: 295px;
+// }
+}
+
+#gradient {
+  .fa-icon;
+  .fas;
+
+  &:before {
+    content: "\f185";
+    position: absolute;
+    top: 120px;
+    left: 295px;
+  }
+}
+
+a {
+	background-color: transparent;
+	border-bottom: 1px solid orange;
+    text-decoration: none;
+}
+
+h1 {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+h4 {
+    border-bottom: 1px solid orange;
+}
+
+h1 ~ h1, h1 ~ h2, h1 ~ h3, h1 ~ h4, h1 ~ h5, h1 ~ h6 {
+	margin-top: 48px;
+	border-bottom: 1px solid orange;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.inner-wrap {
+    background: transparent;
+}
+
+.inner-wrap-main {
+    background: linear-gradient(#3874a8, green);
+    border-radius: 15px;
+}
+
+
+
+// body {
+//     background-image: url(../img/perspective.jpg);
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+.rm-desktop li a {
+   border-radius: 10px;
+}
+
+@nc1: #06167f;
+@nc2: #062c7f;
+@nc3: #06447f;
+@nc4: #065d7f;
+@nc5: #067b7f;
+@nc6: #067f51;
+@nc7: #067f10;
+@nc8: #2e7f06;
+
+.loop(@counter) when (@counter < 9) {
+    @var: "nc@{counter}";
+    .my-navbar li:nth-child(@{counter}){
+        background-color: @@var;
+    }
+    .loop(@counter + 1)
+}
+.loop(1);
 
 
 
@@ -142,4 +244,27 @@ figure.figure {
 
  // Magic number and base fontsize
  @magicNumber:  24px;  // 22px
-@fontSizeBody: 18px; //16px;
+ @fontSizeBody: 18px; //16px;
+
+ .outer-wrap-header {
+ 	background: transparent;
+    color: #dddddd;
+ }
+
+ .rm-desktop li {
+	position: relative;
+	border-radius: 15px;
+}
+
+.rm-default li {
+	display: inline-block;
+	border-radius: 15px;
+}
+
+.rm-default a {
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0.5em 1.5em;
+	outline: 0;
+}

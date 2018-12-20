@@ -23,3 +23,11 @@ v4.0.0 (2018-11-26)
 v4.0.1 (2018-11-27)
 ......................
 * Added links for changing themes in report
+
+v5.1.0 (2018-12-13)
+......................
+* Activated desinax figure, added blog
+
+v6.0.0 (2018-12-20)
+......................
+* Added webpage design evaluation, themes for design elements and design principles with corresponding reports

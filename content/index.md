@@ -17,9 +17,8 @@ Min me-sida i kursen design
 
 [FIGURE src="image/profilbild.jpg?w=350" caption="Bild på mig" class="me"]
 
-Sidan har skrivits av Magnus som studerar på första terminen på programmet Webbprogrammering på Blekinge Tekniska Högskola.
-
-Magnus tycker om programmering och vill gärna göra klart utbildningen och sedan fortsätta med det på något sätt.
+<p id="text">Sidan har skrivits av Magnus som studerar på första terminen på programmet Webbprogrammering på Blekinge Tekniska Högskola.
+Magnus tycker om programmering och vill gärna göra klart utbildningen och sedan fortsätta med det på något sätt.</p>
 
 När han inte studerar arbetar Magnus i Region Skåne dels med praktisk sjukvård och dels med vårdinformationssystem.
 

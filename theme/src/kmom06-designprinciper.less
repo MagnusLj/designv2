@@ -1,0 +1,339 @@
+/*!
+ * Design principles stylesheet for design kmom06.
+ *
+ * This stylesheet is for the design course and kmom06.
+ */
+
+
+//Mixins
+
+@import "mixin/clearfix.less";
+.clearfix() {
+    #design-mixin.clearfix()
+}
+ /**
+  * Normalize and reset the style.
+  */
+@import "normalize.css/normalize.less";
+
+
+
+ /**
+  * Font Awesome.
+  */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+// @import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base.less";
+@import "base/base_kmom04.less";
+
+// Enable style from the module and optinally add customized layout
+// figure.figure {
+//     @maxContentWidth: 960px;
+//     #desinax-figure.figure(@maxContentWidth);
+// }
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid_kmom06.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout.less";
+// @import "layout/layout_kmom02.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+.box() {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#boxA {
+    .box();
+}
+#boxB {
+    .box();
+    padding: 25px;
+}
+#boxC {
+    .box();
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#text::first-letter {
+  font-size: 56px;
+  color: #dddddd;
+  float: left;
+  padding-top: 6px;
+}
+
+#gradient {
+    width: 600px;
+    height: 150px;
+    background: linear-gradient(red, yellow);
+
+    transition: all 1s;
+    &:hover {
+        width: 700px;
+        font-size: 30px;
+        color: green;
+    }
+position: relative;
+//      &:after {
+//     font-family: FontAwesome;
+//     content: @fa-var-user;
+//     position: absolute;
+//     top: 140px;
+//     left: 295px;
+// }
+}
+
+#gradient {
+  .fa-icon;
+  .fas;
+
+  &:before {
+    content: "\f185";
+    position: absolute;
+    top: 120px;
+    left: 295px;
+  }
+}
+
+a {
+	background-color: transparent;
+	// border-bottom: 1px solid orange;
+    text-decoration: none;
+}
+
+h1 {
+    color: #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+h2 {
+    color: #dddddd;
+}
+
+h4 {
+    border-bottom: 1px solid #dddddd;
+    color: #dddddd;
+}
+
+h1 ~ h1, h1 ~ h2, h1 ~ h3, h1 ~ h4, h1 ~ h5, h1 ~ h6 {
+	margin-top: 48px;
+	border-bottom: 1px solid #dddddd;
+    color: #dddddd;
+}
+
+
+// .inner-wrap {
+//     background: transparent;
+// }
+
+.inner-wrap-header {
+    background: transparent;
+}
+
+.inner-wrap-main {
+	background-color: rgba(92,160,197,0.97);
+}
+
+
+body {
+    background-image: url(../img/perspective.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rm-desktop li a {
+   border-radius: 10px;
+}
+
+@nc1: #e6194B;
+@nc2: #f58231;
+@nc3: #ffe119;
+@nc4: #bfef45;
+@nc5: #3cb44b;
+@nc6: #42d4f4;
+@nc7: #4363d8;
+@nc8: #911eb4;
+
+.loop(@counter) when (@counter < 9) {
+    @var: "nc@{counter}";
+    .my-navbar li:nth-child(@{counter}){
+        background-color: @@var;
+    }
+    .loop(@counter + 1)
+}
+.loop(1);
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ @bgColorHtml: #dddddd;  //#424242;
+ @bgColorBody: #dddddd; //#ddd;  //#fff;
+ @colorBody: black;
+ @bgColorinnerWrap: white;
+ @bgColorFooter: rgba(0,0,0,0);
+ @bgColorRegionFooter: rgba(92,160,197,0.97);
+ @colorFooter: black;
+ @bgColorHeader: #dddddd;
+
+ //Adapt typographic grid to style
+ @fontFamilyHeadings: @fontFamilyHelvetica; //"serif";
+ @fontFamilyBody:     @fontFamilyHelvetica; //"sans-serif";
+ @fontFamilyCode:     @fontFamilyCourier; //"monospace";
+
+ // Magic number and base fontsize
+ @magicNumber:  24px;  // 22px
+ @fontSizeBody: 18px; //16px;
+
+ .outer-wrap-header {
+ 	background: transparent;
+    color: black;
+ }
+
+ .rm-navbar {
+ 	position: relative;
+ 	margin: 2em 0;
+
+    transition: all 0.25s;
+    &:hover {
+        margin: 1.5em 0;
+ }
+}
+
+ .rm-desktop li {
+	position: relative;
+	border-radius: 3px;
+}
+
+.rm-default li {
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.meta-header {
+	color: #dddddd;
+}
+
+.rm-default a {
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0.5em 1.5em;
+	outline: 0;
+
+    transition: all 0.25s;
+    &:hover {
+        padding: 1em 1.5em;
+    }
+}
+
+p {
+	margin-bottom: 24px;
+	color: #dddddd;
+}
+
+.byline {
+	border: 1px solid #000;
+	border-radius: 3px;
+	font-size: 12px;
+	background-color: black;
+}
+
+th,
+td,
+legend {
+    color: #dddddd;
+}
+// .row {
+//     margin-top: -18px;
+// }
+
+a:hover {
+    color: #dddddd;
+}
+
+.region-flash {
+    margin-bottom: -18px;
+}
+
+code {
+    color: black;
+}
+
+// #gradient {
+//     width: 600px;
+//     height: 150px;
+//     background: linear-gradient(red, yellow);
+//
+//     transition: all 1s;
+//     &:hover {
+//         width: 700px;
+//         font-size: 30px;
+//         color: green;
+//     }

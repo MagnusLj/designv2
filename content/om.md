@@ -20,6 +20,7 @@ views:
 Om
 =========================
 
-På den här kursen ska man lära sig om design, markdown, Git och en massa andra kul saker.
+<p id="text">På den här kursen ska man lära sig om design, markdown, Git,
+LESS, Desinax, CImage och en massa andra kul saker.</p>
 
 [FIGURE src=image/git.jpg?w=500 caption="Om Git."]

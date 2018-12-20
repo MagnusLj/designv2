@@ -1,7 +1,7 @@
 /*!
- * Minimalistic stylesheet for design kmom05.
+ * Design elements stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom05.
+ * This stylesheet is for the design course and kmom06.
  */
 /**
  * A small clearfix:
@@ -4606,122 +4606,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /** --------------------------------------------------------------
  * Figure through .figure
  */
-figure.asciinema {
-  display: block;
-}
-figure.asciinema figcaption {
-  display: block;
-}
-figure.asciinema .asciicast {
-  margin: 0 !important;
-}
-figure.codepen,
-figure.figure-codepen {
-  width: 100%;
-}
-figure.figure,
-figure.asciinema,
-figure.codepen,
-figure.figure-codepen {
-  display: table;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 24px;
-  /* Chrome shinks images in td */
-  /* Position the images */
-}
-figure.figure img {
-  max-width: 100%;
-  display: block;
-}
-figure.figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  padding-top: 12px;
-}
-figure.figure figcaption p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-style: italic;
-}
-figure.figure td img {
-  max-width: none;
-}
-figure.figure.center {
-  clear: both;
-  margin: auto;
-}
-figure.figure.center figcaption {
-  text-align: center;
-}
-figure.figure.left {
-  float: left;
-  margin-right: 0.5em;
-}
-figure.figure.right {
-  float: right;
-  margin-left: 0.5em;
-}
-@media screen and (max-width: 840px) {
-  figure.figure.left.w67,
-  figure.figure.right.w67 {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  figure.figure.left.w67 img,
-  figure.figure.right.w67 img {
-    width: 840px;
-  }
-}
-@media screen and (max-width: 640px) {
-  figure.figure.left.w50,
-  figure.figure.right.w50 {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  figure.figure.left.w50 img,
-  figure.figure.right.w50 img {
-    width: 640px;
-  }
-}
-@media screen and (max-width: 600px) {
-  figure.figure.left.w40,
-  figure.figure.right.w40 {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  figure.figure.left.w40 img,
-  figure.figure.right.w40 img {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 480px) {
-  figure.figure.left.w33,
-  figure.figure.right.w33 {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  figure.figure.left.w33 img,
-  figure.figure.right.w33 img {
-    width: 480px;
-  }
-}
-@media screen and (max-width: 320px) {
-  figure.figure.left.w25,
-  figure.figure.right.w25 {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  figure.figure.left.w25 img,
-  figure.figure.right.w25 img {
-    width: 320px;
-  }
-}
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
@@ -5147,6 +5031,19 @@ a:hover {
   border-radius: 5px;
   opacity: 0.9;
 }
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
 .footer-column {
   display: inline;
   float: left;
@@ -5154,6 +5051,9 @@ a:hover {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
+}
+h1 {
+  color: red;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -5193,9 +5093,6 @@ a:hover {
 }
 ul {
   list-style-type: none;
-}
-.outer-wrap-header {
-  background-color: #89d2ff;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -5392,6 +5289,144 @@ ul {
   border: 1px solid #6cbac4;
   color: #111;
 }
+#boxA {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+#boxB {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 25px;
+}
+#boxC {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 25px;
+  box-sizing: border-box;
+}
+#text::first-letter {
+  font-size: 56px;
+  color: orange;
+  float: left;
+  padding-top: 6px;
+}
+#gradient {
+  width: 600px;
+  height: 150px;
+  background: linear-gradient(red, yellow);
+  transition: all 1s;
+  position: relative;
+}
+#gradient:hover {
+  width: 700px;
+  font-size: 30px;
+  color: green;
+}
+#gradient {
+  font-weight: normal;
+  vertical-align: -0.125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+#gradient.fa-pull-left {
+  margin-right: 0.3em;
+}
+#gradient.fa-pull-right {
+  margin-left: 0.3em;
+}
+#gradient:before {
+  content: "\f185";
+  position: absolute;
+  top: 120px;
+  left: 295px;
+}
+a {
+  background-color: transparent;
+  border-bottom: 1px solid orange;
+  text-decoration: none;
+}
+h1 {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+h4 {
+  border-bottom: 1px solid orange;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 48px;
+  border-bottom: 1px solid orange;
+}
+img {
+  border-radius: 15px;
+}
+.inner-wrap {
+  background: transparent;
+}
+.inner-wrap-main {
+  background: linear-gradient(#3874a8, green);
+  border-radius: 15px;
+}
+.rm-desktop li a {
+  border-radius: 10px;
+}
+.my-navbar li:nth-child(1) {
+  background-color: #06167f;
+}
+.my-navbar li:nth-child(2) {
+  background-color: #062c7f;
+}
+.my-navbar li:nth-child(3) {
+  background-color: #06447f;
+}
+.my-navbar li:nth-child(4) {
+  background-color: #065d7f;
+}
+.my-navbar li:nth-child(5) {
+  background-color: #067b7f;
+}
+.my-navbar li:nth-child(6) {
+  background-color: #067f51;
+}
+.my-navbar li:nth-child(7) {
+  background-color: #067f10;
+}
+.my-navbar li:nth-child(8) {
+  background-color: #2e7f06;
+}
 /**
  * My own settings, not currently in their own module.
  */
+.outer-wrap-header {
+  background: transparent;
+  color: #dddddd;
+}
+.rm-desktop li {
+  position: relative;
+  border-radius: 15px;
+}
+.rm-default li {
+  display: inline-block;
+  border-radius: 15px;
+}
+.rm-default a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.5em 1.5em;
+  outline: 0;
+}
