@@ -16,7 +16,7 @@ Ett fynd från huset.
 
 Här är en bild på ett verktyg för någon form av textiltillverkning, från (ut)huset. Bilden är tagen med kameran i en Samsung S7-telefon, med standardinställningar.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 
 
@@ -27,7 +27,7 @@ Ett snöre skapas här {#anchor-hit}
 
 Här ser man var de olika trådarna vävs ihop till snöret.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Lite ritad look {#vad-som}
 
@@ -35,7 +35,7 @@ Här ser man var de olika trådarna vävs ihop till snöret.
 
 Man kan få bilden att se lite ritad ut.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Äldre look {#vad-som}
 

@@ -27,7 +27,7 @@ Elektricitet {#anchor-hit}
 
 Här är en mer inzoomad bild där man kan se på var elektriciteten kom in till huset förr i tiden.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Växtlighet {#vad-som}
 
@@ -35,7 +35,7 @@ Här är en mer inzoomad bild där man kan se på var elektriciteten kom in till
 
 Här är rätt mycket växtlighet, som man ju inte ska ha precis vid ett hus.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Lösning {#vad-som}
 

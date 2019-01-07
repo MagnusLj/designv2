@@ -31,3 +31,7 @@ v5.1.0 (2018-12-13)
 v6.0.0 (2018-12-20)
 ......................
 * Added webpage design evaluation, themes for design elements and design principles with corresponding reports
+
+v10.0.0 (2019-01-07)
+......................
+* Added reports for kmom10 including general report and web site design report.

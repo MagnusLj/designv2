@@ -16,7 +16,7 @@ En tidning.
 
 Här är en tidning, från huset. Bilden är tagen med kameran i en Samsung S7-telefon, med standardinställningar.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 
 
@@ -27,7 +27,7 @@ Tidningen är inte från igår {#anchor-hit}
 
 Tidningen är utgiven 1943.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Svartvit {#vad-som}
 
@@ -35,7 +35,7 @@ Tidningen är utgiven 1943.
 
 Originalbilden blev väldigt gulaktig pga suboptimala ljusbetingelser. Den ser nästan bättre ut som svartvit.
 
-[FIGURE class=center]
+[FIGURE src=image/pixel.png class=center]
 
 ### Skarpare utseende {#vad-som}
 
